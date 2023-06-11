@@ -25,3 +25,12 @@ path_to_file/to_certanly_ignore.txt
 git rm -r --cached ./path_to_folder/to_ignore
 git rm --cached ./path_to_folder/to_certanly_ignore.txt
 ```
+
+# Merge commit from branchA to branchB
+```
+$ git checkout branchA
+$ git rev-parse HEAD
+  <commit>
+$ git checkout branchB
+$ git cherry-pick <commit>
+```
