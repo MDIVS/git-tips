@@ -34,3 +34,22 @@ $ git rev-parse HEAD
 $ git checkout branchB
 $ git cherry-pick <commit>
 ```
+
+# Add a GitHub SSH Key on Windows
+A technical resume of [this article](https://syntaxbytetutorials.com/add-a-github-ssh-key-on-windows/).
+
+```
+$ ssh-keygen -t rsa -b 4096 -C "example@example.com"
+```
+
+```
+$ eval $(ssh-agent -s)
+```
+
+```
+$ ssh-add ~/.ssh/id_rsa
+```
+
+```
+$ clip < ~/.ssh/id_rsa.pub
+```
