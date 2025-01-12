@@ -1,5 +1,7 @@
 # git-tips
-Repository created to record Git usage tips that I developed in my daily life
+Repository created to record Git usage tips that I developed in my daily life.
+
+### [How to setup your SSH](./SETUP-SSH.md)
 
 # Rename branch
 Renaming a local branch
@@ -33,23 +35,4 @@ $ git rev-parse HEAD
   <commit>
 $ git checkout branchB
 $ git cherry-pick <commit>
-```
-
-# Add a GitHub SSH Key on Windows
-A technical resume of [this article](https://syntaxbytetutorials.com/add-a-github-ssh-key-on-windows/).
-
-```
-$ ssh-keygen -t rsa -b 4096 -C "example@example.com"
-```
-
-```
-$ eval $(ssh-agent -s)
-```
-
-```
-$ ssh-add ~/.ssh/id_rsa
-```
-
-```
-$ clip < ~/.ssh/id_rsa.pub
 ```
